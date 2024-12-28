@@ -110,11 +110,16 @@ return (
                 <div className='rounded-full px-36'>
                     <Image src = {'/holding_arm.jpg'} alt='holding arm' width={700} height={500} className='rounded-2xl'/>
                 </div>
-                <div className='bg-stone-300 rounded-sm h-40 w-40 '>
-                    {/**left */}
-                    <Image src = {'/ingecting.jpg'} alt='ingecting' width={150} height={500} className='felx justify-center rounded-2xl'/>
+                <div className='flex flex-auto justify-center items-center gap-28 px-20 mr-72'>
+                    <div className='mr-24 '>
+                        <Image src={'/hands_ingect.jpg'} alt='hands ingecting man' width={250} height={300} className='rounded-2xl'/>
+                    </div>
+                    <div className='bg-orange-200 rounded-xl h-80 max-w-60 p-8'>
+                        {/**left */}
+                        <Image src = {'/ingecting.jpg'} alt='ingecting' width={300} height={800} className='felx justify-center rounded-2xl'/>
+                        <p className='text-sm mt-4 flex flex-auto justify-center text-neutral-400'>Effortless Way to Give back</p>
+                    </div>
                 </div>
-
             </div>
         </div>
 

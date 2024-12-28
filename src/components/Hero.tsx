@@ -6,7 +6,7 @@ import { Button } from './ui/button'
 
 
 export default function Hero() {
-  return (
+return (
     <div>
     <div className=' grid grid-rows-1 lg:grid-cols-2 gap-4 mx-4'>
         <div className='grid place-content-center gap-4'>
@@ -81,20 +81,47 @@ export default function Hero() {
             </div>
         </div>
 
-        <div className='mt-8 bg-blue-100 p-2'>
+        <div className='mt-20 bg-blue-100 p-2'>
                 <div>
                     {/**Heading */}
                     <h1 className='text-3xl font-bold flex items-center justify-center mt-11'>How BloodBridge Work?</h1>
                 </div>
-                <div>
-                    <div className='px-12'>
+                <div className='flex'>
+                    <div className='px-52'>
                         {/**Left img */}
                         <Image src={'/map.svg'} alt='map' width={500} height={500}/>
                     </div>
-                    <div>
+                    <div className='mt-40 mr-24'>
                         {/** Some Info */}
+                        <h1 className='font-bold'>Step 1</h1>
+                        <h1 className='text-2xl font-bold mr-20'>Requesting Blood: Simple and Direct</h1>
+                        <p className='mr-24'>User or Hospital easialy submit thier urgent need through this app.</p>
                     </div>
                 </div>
+        </div>
+        <div className='items-center justify-center'>
+            <div>
+                {/**Header */}
+                <h1 className='font-medium text-3xl flex justify-center items-center mt-20'>Our Impact</h1>
+            </div>
+            {/**3 img */}
+            <div className='felx ml-60 mt-8 items-center justify-center'>
+                {/**Top Image */}
+                <div className='rounded-full px-36'>
+                    <Image src = {'/holding_arm.jpg'} alt='holding arm' width={700} height={500} className='rounded-2xl'/>
+                </div>
+                <div className='bg-stone-300 rounded-sm h-40 w-40 '>
+                    {/**left */}
+                    <Image src = {'/ingecting.jpg'} alt='ingecting' width={150} height={500} className='felx justify-center rounded-2xl'/>
+                </div>
+
+            </div>
+        </div>
+
+        <div className='bg-neutral-200 mt-20'>
+            <div className='p-12 ml-35'>
+            <Image src={'/last_landing_pic.svg'} alt='last artistic pic'width={2000} height={900}/>
+            </div>
         </div>
     </div>
     )
